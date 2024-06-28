@@ -106,7 +106,9 @@ dl.reslinks {
     margin-block-end: 3em;
 	}
 
-
+.nobullet {
+    list-style-type: none;
+    }
 
 
 
