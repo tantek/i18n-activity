@@ -65,7 +65,7 @@ function buildDoc (repo, doc) {
 	if (sections.transforms) buildSection(sections.transforms,'transforms', doc, repo)
 	if (sections.data_formats) buildSection(sections.data_formats,'data_formats', doc, repo)
 
-    if (sections.encoding) buildSection(sections.encoding,'charset', doc, repo)
+    if (sections.encoding) buildSection(sections.encoding,'encoding', doc, repo)
 	if (sections.segmentation) buildSection(sections.segmentation,'segmentation', doc, repo)
 
 	if (sections.punctuation_etc) buildSection(sections.punctuation_etc,'punctuation_etc', doc, repo)
@@ -279,7 +279,7 @@ function setUpSummary () {
 	summary.vertical_text = document.getElementById('vertical_text').className
 	summary.bidi_text = document.getElementById('bidi_text').className
 
-	summary.charset = document.getElementById('charset').className
+	summary.encoding = document.getElementById('encoding').className
 	summary.fonts = document.getElementById('fonts').className
 	summary.font_style = document.getElementById('font_style').className
 	summary.glyphs = document.getElementById('glyphs').className
@@ -329,7 +329,7 @@ function printSummary (tentative) {
 		out += ', font_style:"'+window.summary.font_style+'"'
 		out += ', transforms:"'+window.summary.transforms+'"'
 
-		out += ', charset:"'+window.summary.charset+'"'
+		out += ', encoding:"'+window.summary.encoding+'"'
 		out += ', segmentation:"'+window.summary.segmentation+'"'
 
 		out += ', punctuation_etc:"'+window.summary.punctuation_etc+'"'
