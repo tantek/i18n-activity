@@ -130,5 +130,11 @@ dl.reslinks {
 
 
 
+.variable.empty, .variable.empty:visited {
+    color: gray;
+    font-style: italic;
+    }
+
+
 
 
