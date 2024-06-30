@@ -61,7 +61,7 @@ function buildDoc (repo, doc) {
 	if (sections.fonts) buildSection(sections.fonts,'fonts', doc, repo)
 	if (sections.glyphs) buildSection(sections.glyphs,'glyphs', doc, repo)
 	if (sections.cursive) buildSection(sections.cursive,'cursive', doc, repo)
-	if (sections.font_styles) buildSection(sections.font_styles,'font_style', doc, repo)
+	if (sections.letterforms) buildSection(sections.letterforms,'letterforms', doc, repo)
 	if (sections.transforms) buildSection(sections.transforms,'transforms', doc, repo)
 	if (sections.data_formats) buildSection(sections.data_formats,'data_formats', doc, repo)
 
@@ -281,7 +281,7 @@ function setUpSummary () {
 
 	summary.encoding = document.getElementById('encoding').className
 	summary.fonts = document.getElementById('fonts').className
-	summary.font_style = document.getElementById('font_style').className
+	summary.letterforms = document.getElementById('letterforms').className
 	summary.glyphs = document.getElementById('glyphs').className
 	summary.cursive = document.getElementById('cursive').className
 	summary.transforms = document.getElementById('transforms').className
@@ -294,7 +294,6 @@ function setUpSummary () {
 	summary.data_formats = document.getElementById('data_formats').className
 
 	summary.line_breaking = document.getElementById('line_breaking').className
-	summary.hyphenation = document.getElementById('hyphenation').className
 	summary.justification = document.getElementById('justification').className
 	summary.spacing = document.getElementById('spacing').className
 	summary.lists = document.getElementById('lists').className
@@ -326,7 +325,7 @@ function printSummary (tentative) {
 		out += ', fonts:"'+window.summary.fonts+'"'
 		out += ', glyphs:"'+window.summary.glyphs+'"'
 		out += ', cursive:"'+window.summary.cursive+'"'
-		out += ', font_style:"'+window.summary.font_style+'"'
+		out += ', letterforms:"'+window.summary.letterforms+'"'
 		out += ', transforms:"'+window.summary.transforms+'"'
 
 		out += ', encoding:"'+window.summary.encoding+'"'
