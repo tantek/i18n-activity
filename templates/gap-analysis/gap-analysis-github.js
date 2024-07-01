@@ -85,7 +85,7 @@ function buildDoc (repo, doc) {
 	if (sections.page_layout) buildSection(sections.page_layout,'page_layout', doc, repo)
 	if (sections.grids_tables) buildSection(sections.grids_tables,'grids_tables', doc, repo)
 	if (sections.footnotes_etc) buildSection(sections.footnotes_etc,'footnotes_etc', doc, repo)
-	if (sections.headers_footers) buildSection(sections.page_headers_footers_etc,'headers_footers', doc, repo)
+	if (sections.headers_footers) buildSection(sections.headers_footers,'headers_footers', doc, repo)
 	if (sections.interaction) buildSection(sections.interaction,'interaction', doc, repo)
 	}
 
