@@ -90,6 +90,10 @@
 <h3>About this document</h3>
 
 <p>The aim of this document is to describe the basic requirements for XX_SCRIPTNAME script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications, and for application developers, about how to support users of the XX_SCRIPTNAME script. The document currently focuses on texts using the XX_LANGNAME language.</p>
+
+<p>The document focuses on typographic layout issues.  For a deeper understanding of XX_LANGNAME using the XX_SCRIPTNAME script and how it works see<cite>XX_ORTHOG Orthography Notes</cite>, which includes topics such as: <a href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#phonology">Phonology</a>, <a href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#vowels">Vowels</a>, <a href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#consonants">Consonants</a>, <a href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#encoding">Encoding choices</a>, and <a href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#numbers">Numbers</a>.</p>
+
+<p>This document should contain no reference to a particular technology. For example, it should not say &quot;CSS does/doesn't do such and such&quot;, and it should not describe how a technology, such as CSS, should implement the requirements. It is technology agnostic, so that it will be evergreen, and it simply describes how the script works. The gap analysis document is the appropriate place for all kinds of technology-specific information.</p>
 </section>
 
 
@@ -100,13 +104,9 @@
 <section id="h_gap_analysis">
 <h3>Gap analysis</h3>
 
-<p>This document is pointed to by a separate document, <a href="https://www.w3.org/TR/XX_GAPSHORTNAME/"><cite>XX_LANGNAME Gap Analysis</cite></a>, which describes gaps in support for XX_LANGNAME on the Web, and prioritises and describes the impact of those gaps on the user.</p>
+<p>This document should be used alongside a separate document, <a href="https://www.w3.org/TR/XX_GAPSHORTNAME/"><cite>XX_LANGNAME Gap Analysis</cite></a>, which describes gaps in support for XX_LANGNAME on the Web, and prioritises and describes the impact of those gaps on the user.</p>
 
-<p>Wherever an unsupported feature is indentified through the gap analysis process, the requirements for that feature need to be documented. The gap reports will typically point back to this document for more information.</p>
-
-<p>As gaps in support for XX_LANGNAME are captured, the gaps can be brought to the attention of the relevant spec developer or the browser implementator community. The progress of such work is tracked in the <a href="https://github.com/orgs/w3c/projects/95?card_filter_query=label%3Adoc%3AXX_SCRIPTTAG">Gap Analysis Pipeline</a>.</p>
-
-<p>This document should contain no reference to a particular technology. For example, it should not say &quot;CSS does/doesn't do such and such&quot;, and it should not describe how a technology, such as CSS, should implement the requirements. It is technology agnostic, so that it will be evergreen, and it simply describes how the script works. The gap analysis document is the appropriate place for all kinds of technology-specific information.</p>
+<p>Gap reports are brought to the attention of spec and browser implementers, and are tracked via the <a href="https://github.com/orgs/w3c/projects/95" target="_blank">Gap Analysis Pipeline</a>. (<a href="https://github.com/orgs/w3c/projects/95/views/1?filterQuery=label%3A%22doc%3Aarab_ks%22" target="_blank">Filter it for Kashmiri</a>)</p>
 </section>
 
 
@@ -524,7 +524,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Gap analysis</dt>
 <dd>
 <ul class="linkList">
-<li><a class="variable empty" target="_blank" href="https://www.w3.org/TR/XX_GAPSHORTNAME/#glyphs">Glyph shaping and positioning</a></li>
+<li><a class="variable empty" target="_blank" href="https://www.w3.org/TR/XX_GAPSHORTNAME/#glyphs">Context-based shaping &amp; positioning</a></li>
 </ul>
 </dd>
 
@@ -775,7 +775,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 • <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#encoding" class="external">Encoding choices</a>
 </li>
 
-<li style="color:red; font-size:150%; background-color: yellow;"><a target="_blank" href="https://r12a.github.io/app-charuse/index.html?language=XX_CHARUSETAG">Character usage</a></li>
+<li>Character usage: <a target="_blank" href="https://r12a.github.io/app-charuse/index.html?script=XX_LCSCRIPTNAME">XX_SCRIPTNAME</a></li>
 </ul>
 </dd>
 
@@ -1312,7 +1312,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 
 <li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Atext_decoration">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Atext-decoration">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Atext_decoration">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1332,7 +1332,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <ul>
 <li><a class="variable empty" target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-text-decoration.html#XX_TESTFRAGNAME">Exploratory/interactive test results</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3As%3AXX_SCRIPTTAG+label%3Ai%3AText_decoration">Exploratory/interactive test repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Atext_decoration">Exploratory/interactive test repo</a></li>
 
 <li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-decoration">CSS3 Text decoration, Line decoration</a></li>
 </ul>
@@ -2148,11 +2148,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <h2>Change log</h2>
 
 <ul>
-<li>Added links to all sections where additional information is available.</li>
-<li>Updated the script overview section.</li>
-<li>Removed all text that was simply a copy of the text at r12a.github.io.</li>
-<li>Created 'Contributors' section to list contributors other than the editor.</li>
-<li>Updated the front matter.</li>
+<li>Applied new template.</li>
 </ul>
 </section>
 </body>
