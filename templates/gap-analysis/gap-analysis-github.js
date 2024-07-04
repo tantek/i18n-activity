@@ -1,7 +1,7 @@
 var owner = 'w3c'
 
 var sections = {}
-var debug = true
+var debug = false
 
 var issues = []
 var maxpages = 6
@@ -111,15 +111,33 @@ function buildSection (theData, sectionId, doc, repo) {
 			out += '<h4>#'+theData[i].number+' '+theData[i].title+'</h4>\n'
 			out += `<p class="ghLink">`
             
-             	// figure out priority for this issue
-                var priority = ''
-                if (issueLabelSet.has('p:basic')) priority = 'basic'
-                else if (issueLabelSet.has('p:advanced')) priority = 'advanced'
-                else if (issueLabelSet.has('p:broken')) priority = 'broken'
-                else if (issueLabelSet.has('p:ok')) priority = 'ok'
+            //console.log('issueLabelSet', issueLabelSet)
+            
+            priorityValue = 0 // used to catch information by language below
+            
+            // figure out priority for this issue
+            var priority = ''
+            if (issueLabelSet.has('p:basic')) { priority = 'basic'; priorityValue = 1 }
+            else if (issueLabelSet.has('p:advanced')) { priority = 'advanced'; priorityValue = 2 }
+            else if (issueLabelSet.has('p:broken')) { priority = 'broken'; priorityValue = 0 }
+            else if (issueLabelSet.has('p:ok')) { priority = 'ok'; priorityValue = 3 }
             
            out += `<a target="_blank" href="https://github.com/w3c/${ repo }/issues/${ theData[i].number }" class="issueLink ${ priority+'Issue'}">GitHub issue #${ theData[i].number }</a></p>`
-            
+           
+
+           // make a list of languages and scores
+           var languageScores = []
+           labellist = [... issueLabelSet]
+
+            for (q=0;q<labellist.length;q++) {
+                if (labellist[q].startsWith('l:')) {
+                    languageScores.push([labellist[q]])
+                    }
+                }
+       
+           
+           
+           out += `<p class="languageData">Languages: <span class="relevantLanguages">${ languageScores.join(' ').replace(/l:/g,'') }</span> <span class="issueScore">${ priorityValue }</span></p>`
 
 
 			out += '<p>'
@@ -309,6 +327,42 @@ function setUpSummary () {
 
 
 
+function getDataLine (topic, lang) {
+    // condenses scores for individual languages to be used by printSummary
+    // topic is a pointer to a section in the document
+    
+    if (typeof topic === 'undefined') return ''
+    
+    var langDatas = topic.querySelectorAll('.relevantLanguages')
+    if (typeof langDatas === 'undefined' || langDatas.length === 0) {
+        if (topic.classList.contains('na') || topic.classList.contains('ok')) return '-'
+        else return ''
+        }
+    var langScores = topic.querySelectorAll('.issueScore')
+    
+    //console.log('topic',topic.textContent)
+    //console.log('langDatas',langDatas)
+    //console.log('langScores',langScores)
+    
+    latest = 10
+    for (i=0;i<langDatas.length;i++) {
+        if (langDatas[i].textContent.includes(lang)) {
+            if (parseInt(langScores[i].textContent) < latest) {
+                latest = parseInt(langScores[i].textContent)
+                }
+            }
+        }
+
+    if (latest === 10) latest = '-'
+    //console.log('latest',latest)
+    return latest
+    }
+
+
+
+
+
+
 
 function printSummary (tentative) {
 // creates the summary at the bottom of the page that is copy/pasted into the language matrix data
@@ -319,41 +373,41 @@ function printSummary (tentative) {
 		out += '{lang: "'+respecConfig.langs[i]+'"'
 		out += ', url:"'+respecConfig.gapDocPath+'"'
 		out += ', tentative:' + tentative
-		out += ', vertical_text:"'+window.summary.vertical_text+'"'
-		out += ', bidi_text:"'+window.summary.bidi_text+'"'
+		out += `, vertical_text:"${ getDataLine(document.getElementById('vertical_text'), respecConfig.langTags[i]) }"`
+		out += `, bidi_text:"${ getDataLine(document.getElementById('bidi_text'), respecConfig.langTags[i]) }"`
 
-		out += ', fonts:"'+window.summary.fonts+'"'
-		out += ', glyphs:"'+window.summary.glyphs+'"'
-		out += ', cursive:"'+window.summary.cursive+'"'
-		out += ', letterforms:"'+window.summary.letterforms+'"'
-		out += ', transforms:"'+window.summary.transforms+'"'
+		out += `, fonts:"${ getDataLine(document.getElementById('fonts'), respecConfig.langTags[i]) }"`
+		out += `, glyphs:"${ getDataLine(document.getElementById('glyphs'), respecConfig.langTags[i]) }"`
+		out += `, cursive:"${ getDataLine(document.getElementById('cursive'), respecConfig.langTags[i]) }"`
+		out += `, letterforms:"${ getDataLine(document.getElementById('letterforms'), respecConfig.langTags[i]) }"`
+		out += `, transforms:"${ getDataLine(document.getElementById('transforms'), respecConfig.langTags[i]) }"`
 
-		out += ', encoding:"'+window.summary.encoding+'"'
-		out += ', segmentation:"'+window.summary.segmentation+'"'
+		out += `, encoding:"${ getDataLine(document.getElementById('encoding'), respecConfig.langTags[i]) }"`
+		out += `, segmentation:"${ getDataLine(document.getElementById('segmentation'), respecConfig.langTags[i]) }"`
 
-		out += ', punctuation_etc:"'+window.summary.punctuation_etc+'"'
-		out += ', quotations:"'+window.summary.quotations+'"'
-		out += ', emphasis:"'+window.summary.emphasis+'"'
-		out += ', abbrev:"'+window.summary.abbrev+'"'
-		out += ', inline_notes:"'+window.summary.inline_notes+'"'
-		out += ', text_decoration:"'+window.summary.text_decoration+'"'
-		out += ', data_formats:"'+window.summary.data_formats+'"'
+		out += `, punctuation_etc:"${ getDataLine(document.getElementById('punctuation_etc'), respecConfig.langTags[i]) }"`
+		out += `, quotations:"${ getDataLine(document.getElementById('quotations'), respecConfig.langTags[i]) }"`
+		out += `, emphasis:"${ getDataLine(document.getElementById('emphasis'), respecConfig.langTags[i]) }"`
+		out += `, abbrev:"${ getDataLine(document.getElementById('abbrev'), respecConfig.langTags[i]) }"`
+		out += `, inline_notes:"${ getDataLine(document.getElementById('inline_notes'), respecConfig.langTags[i]) }"`
+		out += `, text_decoration:"${ getDataLine(document.getElementById('text_decoration'), respecConfig.langTags[i]) }"`
+		out += `, data_formats:"${ getDataLine(document.getElementById('data_formats'), respecConfig.langTags[i]) }"`
 
-		out += ', line_breaking:"'+window.summary.line_breaking+'"'
-		out += ', justification:"'+window.summary.justification+'"'
-		out += ', spacing:"'+window.summary.spacing+'"'
-		out += ', baselines:"'+window.summary.baselines+'"'
-		out += ', lists:"'+window.summary.lists+'"'
-		out += ', initials:"'+window.summary.initials+'"'
+		out += `, line_breaking:"${ getDataLine(document.getElementById('line_breaking'), respecConfig.langTags[i]) }"`
+		out += `, justification:"${ getDataLine(document.getElementById('justification'), respecConfig.langTags[i]) }"`
+		out += `, spacing:"${ getDataLine(document.getElementById('spacing'), respecConfig.langTags[i]) }"`
+		out += `, baselines:"${ getDataLine(document.getElementById('baselines'), respecConfig.langTags[i]) }"`
+		out += `, lists:"${ getDataLine(document.getElementById('lists'), respecConfig.langTags[i]) }"`
+		out += `, initials:"${ getDataLine(document.getElementById('initials'), respecConfig.langTags[i]) }"`
 
-		out += ', page_layout:"'+window.summary.page_layout+'"'
-		out += ', grids_tables:"'+window.summary.grids_tables+'"'
-		out += ', footnotes_etc:"'+window.summary.footnotes_etc+'"'
-		out += ', headers_footers:"'+window.summary.headers_footers+'"'
-		out += ', interaction:"'+window.summary.interaction+'"'
+		out += `, page_layout:"${ getDataLine(document.getElementById('page_layout'), respecConfig.langTags[i]) }"`
+		out += `, grids_tables:"${ getDataLine(document.getElementById('grids_tables'), respecConfig.langTags[i]) }"`
+		out += `, footnotes_etc:"${ getDataLine(document.getElementById('footnotes_etc'), respecConfig.langTags[i]) }"`
+		out += `, headers_footers:"${ getDataLine(document.getElementById('headers_footers'), respecConfig.langTags[i]) }"`
+		out += `, interaction:"${ getDataLine(document.getElementById('interaction'), respecConfig.langTags[i]) }"`
 		out += '},\n'
 
-		if (debug) console.log(summary)
+		if (debug) console.log('SUMMARY', summary)
 
 		out = out.replace(/tbd/g,'')
 		out = out.replace(/broken/g,'0')
@@ -363,4 +417,5 @@ function printSummary (tentative) {
 		out = out.replace(/"na/g,'"-')
 	}
 	document.getElementById('summaryPlaceholder').textContent = out
+	document.getElementById('summaryPlaceholder').style.display = 'block'
 	}
