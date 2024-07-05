@@ -137,10 +137,10 @@ dl.reslinks {
 
 
 .reslinks a[href] {
-    color: chocolate;
+    color: darkorange;
     }
 .reslinks a[href]:visited {
-    color: chocolate;
+    color: darkorange;
     }
 
 
