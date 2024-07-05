@@ -1,4 +1,9 @@
 
+
+/* USE i18n-drafts/style/respec_2022.css INSTEAD OF THIS FILE  */
+
+
+/* HEADINGS */
 h2 {
 	margin-bottom: 0em !important;
 	}
@@ -18,6 +23,9 @@ h4  {
 	font-weight: bold;
 	}
 
+
+
+/* CHANGE MARKUP */
 ins { 
 	background-color: #99FF99; 
 	text-decoration: none; 
@@ -27,6 +35,10 @@ del {
 	color: silver; 
 	}
 
+
+
+
+/* FIGURES */
 figure { 
 	margin-bottom: 2em; 
 	text-align: center;
@@ -41,6 +53,11 @@ figcaption {
 	content: ':\00A0  ';
 }
 
+
+
+
+
+/* LINKS */
 a.termref:link {
 	color:#C60;
 	text-decoration:none;
@@ -62,6 +79,10 @@ a.termref:active {
 	border-bottom: 1px dotted #FC0; 
 	}
 
+
+
+
+/* INLINE MARKUP */
 .qterm:before, .qchar:before { content: "'"; }
 .qterm:after, .qchar:after { content: "'"; }
 .quote:before { content: '"'; }
