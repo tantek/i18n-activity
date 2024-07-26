@@ -11,16 +11,11 @@
     // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
     specStatus:           "ED",
     //publishDate:  		"2020-06-16",
-    //previousPublishDate:  "2014-12-16",
-    //previousMaturity:  "FPWD",
 
     noRecTrack:           true,
     shortName:            "XX_SHORTNAME-lreq",
     copyrightStart:       "2018",
     edDraftURI:           "https://w3c.github.io/XX_SHORTNAME/",
-
-    // if this is a LCWD, uncomment and set the end of its review period
-    // lcEnd: "2009-08-05",
 
     editors:  [
     { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C", w3cid: 3439 }
@@ -59,7 +54,7 @@
 <div id="sotd">
 <p>This document  points to resources for XX_SCRIPTNAME script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support languages written using the XX_SCRIPTNAME script. The information here is developed in conjunction with a <a href="https://www.w3.org/TR/XX_GAPSHORTNAME/">document that summarises gaps</a> where the Web fails to adequately support the XX_SCRIPTNAME script.</p>
 
-<p>The editor's draft of this document is being developed in the GitHub repository <a href="https://w3c.github.io/XX_REPONAME/">XX_TASKFORCENAME (XX_ACRONYM)</a>, with contributors from the <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/International/i18n-activity/i18n-ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/i18n-activity/i18n-wg/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+<p>The editor's draft of this document is being developed in the GitHub repository <a href="https://w3c.github.io/XX_REPONAME/">XX_TASKFORCENAME Language Enablement (XX_REPONAME)</a>, with contributors from the <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/International/i18n-activity/i18n-ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/i18n-activity/i18n-wg/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
 
 <p>To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on using a URL.</p>
 </div>
@@ -93,7 +88,7 @@
 
 <p>The following people contributed information that was used in preparing this document (in alphabetic order): XXXX.</p>
 
-<p data-lang="en">See also the <a href="https://github.com/w3c/XX_REPONAME/graphs/contributors">GitHub contributors list</a> for the XX_LANGNAME Language Enablement project, and the <a href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG">discussions related to the XX_SCRIPTNAME script</a>.</p>
+<p data-lang="en">See also the <a href="https://github.com/w3c/XX_REPONAME/graphs/contributors">GitHub contributors list</a> for the XX_TASKFORCENAME Language Enablement project, and the <a href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG">discussions related to the XX_SCRIPTNAME script</a>.</p>
 </section>
 
 
@@ -139,7 +134,7 @@
 
 <p>The document <a href="https://www.w3.org/TR/typography/"><cite>Language enablement index</cite></a> points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
 
-<p>The <abbr title="World Wide Web Consortium">W3C</abbr> also has a repository with discussion threads related to the XX_SCRIPTNAME script, including requests from developers to the user community for information about how scripts/languages work, and a notification system that tracks issues in <abbr title="World Wide Web Consortium">W3C</abbr> working groups related to the XX_SCRIPTNAME script. See a list of <a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion+">unresolved questions</a> for XX_SCRIPTNAME experts. Each section below points to related discussions. See also the <a href="https://w3c.github.io/XX_REPONAME/home">repository home page</a>.</p>
+<p>The <abbr title="World Wide Web Consortium">W3C</abbr> also has a repository with discussion threads related to the XX_SCRIPTNAME script, including requests from developers to the user community for information about how scripts/languages work, and a notification system that tracks issues in <abbr title="World Wide Web Consortium">W3C</abbr> working groups related to the XX_SCRIPTNAME script. See a list of <a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion+label%3As%3AXX_SCRIPTNAME">unresolved questions</a> for XX_SCRIPTNAME experts. Each section below points to related discussions. See also the <a href="https://w3c.github.io/XX_REPONAME/home">repository home page</a>.</p>
 </section>
 </section>
 
@@ -162,7 +157,7 @@
 <section id="h_script_overview">
 <h2>XX_SCRIPTNAME Script Overview</h2>
 
-<p>The XX_SCRIPTNAME script is an <a class="termref" href="https://w3.org/TR/i18n-glossary/#alphabet">alphabet</a>, ie. a writing system in which both consonants and vowels are indicated.</p>
+<p>The XX_SCRIPTNAME script is an <a class="termref" href="https://w3.org/TR/i18n-glossary/#dfn-alphabet">alphabet</a>, ie. a writing system in which both consonants and vowels are indicated.</p>
 
 <p>Modern XX_LANGNAME can be written using a subset of the letters available in the XX_SCRIPTNAME Unicode block. The remainder are used for writing Todo, Sibe, and Manchu, or for writing foriegn words, especially in Tibetan and Sanskrit.</p>
 
@@ -172,9 +167,9 @@
 
 <p>Words are separated by spaces, but also <em>contain</em> narrow spaces that precede suffixes and may produce shaping differences to the surrounding letters. These are part of the word, and the parts on either side should not be separated.</p>
 
-<p class="addToConsonants">Modern  Mongolian uses 16 basic consonant letters and 11 more for representing foreign sounds.</p>
-In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters, including one for foreign sounds.
-<p class="addToVowels">Mongolian has separate code points for each sound in Mongolian, but many of these look indistinguishable from each other when rendered. This creates difficulties for novices to reproduce Mongolian text without access to the source..</p>
+<p>Modern  Mongolian uses 16 basic consonant letters and 11 more for representing foreign sounds.</p>
+
+<p>Mongolian has separate code points for each sound in Mongolian, but many of these look indistinguishable from each other when rendered. This creates difficulties for novices to reproduce Mongolian text without access to the source..</p>
 
 <p><a class="termref" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#diglossia">Vowel reduction</a> is a significant feature of Mongolian. Non-initial short vowels are reduced to vestiges or to zero, and non-initial long vowels in the orthography are reduced to short vowel length.</p>
 
@@ -197,7 +192,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 
 
 <section>
-<h2 style="color:red; font-size:150%; background-color: yellow;" id="h_all_topics">All topics</h2>
+<h2>All topics</h2>
 
 
 <aside class="prompts">Links reveal all results, regardless of topic, for issues, tests, and samples. </aside>
@@ -209,11 +204,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen">Open requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen">Open requests for information</a></li>
 
-<li><a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL">All XX_LANGNAME issues in the XX_REPONAME repo</a></li>
+<li><a target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG">All XX_LANGNAME issues in the XX_REPONAME repo</a></li>
 
-<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=is%3Aissue+label%3AXX_SPECISSUELABEL">All XX_SCRIPTNAME issues in W3C specs</a></li>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=is%3Aissue+label%3Ascript-XX_SCRIPTTAG">All XX_SCRIPTNAME issues in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -240,7 +235,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 </dd><dt>Gap analysis</dt>
 <dd>
 <ul class="linkList">
-<li><a target="_blank" href="https://www.w3.org/TR/XX_GAPSHORTNAME/">XXXXX</a></li>
+<li><a target="_blank" href="https://www.w3.org/TR/XX_SCRIPTTAG-gap/">XX_SCRIPTNAME</a></li>
 </ul>
 </dd>
 </dl>
@@ -274,18 +269,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#direction">Text direction</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#direction">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+is%3Aopen+label%3Aquestion+label%3Ai%3Avertical_text">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+is%3Aopen+label%3Aquestion+label%3Ai%3Avertical_text">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Avertical_text">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Avertical_text">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3AXX_SPECISSUELABEL+label%3Ai%3Avertical_text">XX_SPECTYPEISSUE issues in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Avertical_text">XX_SPECTYPEISSUE issues in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -343,18 +338,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#direction">Text direction</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#direction">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+is%3Aopen+label%3Aquestion+label%3Ai%3Abidi_text">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+is%3Aopen+label%3Aquestion+label%3Ai%3Abidi_text">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Abidi_text">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Abidi_text">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3AXX_SPECISSUELABEL+label%3Ai%3Abidi_text">XX_SPECTYPEISSUE issues in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+is%3Aissue+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Abidi_text">XX_SPECTYPEISSUE issues in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -422,7 +417,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#writing_styles">Font styles</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#writing_styles">XX_ORTHLANG</a></li>
 
 <li style="color:red; font-size:150%; background-color: yellow;"><a target="_blank" href="https://github.com/w3c/i18n-discuss/wiki/Generic-font-families">Generic font families</a> (XXXX)</li>
 
@@ -433,11 +428,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Afonts">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Afonts">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Afonts">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Afonts">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Afonts">XX_SPECTYPEISSUE issues in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Afonts">XX_SPECTYPEISSUE issues in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -506,18 +501,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#context">Context-based shaping &amp; positioning</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#context">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aglyphs">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aglyphs">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aglyphs">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aglyphs">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Aglyphs">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aglyphs">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -545,14 +540,14 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Gap analysis</dt>
 <dd>
 <ul class="linkList">
-<li><a class="variable empty" target="_blank" href="https://www.w3.org/TR/XX_GAPSHORTNAME/#glyphs">Context-based shaping &amp; positioning</a></li>
+<li><a class="variable" target="_blank" href="https://www.w3.org/TR/XX_GAPSHORTNAME/#glyphs">Context-based shaping &amp; positioning</a></li>
 </ul>
 </dd>
 
 <dt>LE Index</dt>
 <dd class="le_index">
 <ul class="linkList">
-<li><a class="variable empty" target="_blank" href="https://www.w3.org/TR/typography/#glyphs">Context-based shaping &amp; positioning</a></li>
+<li><a class="variable" target="_blank" href="https://www.w3.org/TR/typography/#glyphs">Context-based shaping &amp; positioning</a></li>
 </ul>
 </dd>
 </dl>
@@ -578,18 +573,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#cursive">Cursive shaping</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#cursive">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Acursive">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Acursive">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Acursive">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Acursive">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Acursive">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Acursive">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -647,18 +642,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#fontstyle">Letterform slopes, weights, &amp; italics</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#fontstyle">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aletterforms">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aletterforms">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aletterforms">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aletterforms">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Aletterforms+">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aletterforms+">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -716,18 +711,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#transforms">Case &amp; other character transforms</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#transforms">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Atransforms">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Atransforms">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Atransforms">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Atransforms">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Atransforms">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Atransforms">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -794,10 +789,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#vowels" class="external">Vowels</a> 
-• <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#consonants" class="external">Consonants</a>
-• <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#encoding" class="external">Encoding choices</a>
-</li>
+<li><cite>Orthography Notes</cite>, Vowels: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#vowels">XX_ORTHLANG</a></li>
+
+<li><cite>Orthography Notes</cite>, Consonants: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#consonants">XX_ORTHLANG</a></li>
+
+<li><cite>Orthography Notes</cite>, Encoding choices: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#encoding">XX_ORTHLANG</a></li>
 
 <li>Character usage: <a target="_blank" href="https://r12a.github.io/app-charuse/index.html?script=XX_LCSCRIPTNAME">XX_SCRIPTNAME</a></li>
 </ul>
@@ -806,11 +802,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aencoding">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aencoding">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aencoding">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aencoding">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Aencoding">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aencoding">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -872,19 +868,20 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#word" class="external">Word boundaries</a> • 
-<a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH.html#graphemes" class="external">Graphemes</a></li>
+<li><cite>Orthography Notes</cite>, Word boundaries: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#word">XX_ORTHLANG</a></li>
+
+<li><cite>Orthography Notes</cite>, Graphemes: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#graphemes">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Asegmentation">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Asegmentation">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Asegmentation">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Asegmentation">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Asegmentation">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Asegmentation">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -961,18 +958,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#phrase" class="external">Phrase &amp; section boundaries</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#phrase">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Apunctuation_etc">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Apunctuation_etc">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Apunctuation_etc">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Apunctuation_etc">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Apunctuation_etc">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Apunctuation_etc">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1035,7 +1032,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a  target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#quotations" class="external">Quotations &amp; citations</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#quotations">XX_ORTHLANG</a></li>
 
 <li><cite>Wikipedia</cite>: <a  target="_blank" href="https://en.wikipedia.org/wiki/Quotation_mark" class="external">Quotation mark</a></li>
 </ul>
@@ -1044,11 +1041,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aquotations">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aquotations">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aquotations">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aquotations">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Aquotations">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aquotations">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1106,18 +1103,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#emphasis">Emphasis &amp; highlighting</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#emphasis">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aemphasis">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aemphasis">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aemphasis">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aemphasis">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Aemphasis">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aemphasis">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1174,18 +1171,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#abbrev">Abbreviation, ellipsis &amp; repetition</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#abbrev">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aabbrev">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aabbrev">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aabbrev">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aabbrev">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Aabbrev">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aabbrev">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1242,7 +1239,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#inlinenotes">Inline notes &amp;  annotations</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#inlinenotes">XX_ORTHLANG</a></li>
 
 <li><cite><a target="_blank" href="https://www.w3.org/TR/ruby-use-cases/">Use Cases &amp; Exploratory Approaches for Ruby Markup</a></cite> </li>
 </ul>
@@ -1251,11 +1248,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Ainline_notes">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Ainline_notes">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Ainline_notes">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Ainline_notes">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Ainline_notes">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Ainline_notes">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1317,18 +1314,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#otherinline">Text decoration &amp; other inline features</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#otherinline">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Atext_decoration">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Atext_decoration">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Atext_decoration">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Atext_decoration">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Atext_decoration">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Atext_decoration">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1388,18 +1385,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#numbers">Numbers</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#numbers">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Adata_formats">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Adata_formats">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Adata_formats">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Adata_formats">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3AXX_SPECISSUELABEL+label%3Ai%3Adata_formats">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Adata_formats">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1420,8 +1417,6 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <li><a class="variable empty" target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-text-decoration.html#XX_TESTFRAGNAME">Exploratory/interactive test results</a></li>
 
 <li><a class="variable empty" target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Adata_formats">Exploratory/interactive test repo</a></li>
-
-<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-decoration">CSS3 Text decoration, Line decoration</a></li>
 </ul>
 
 </dd><dt>Gap analysis</dt>
@@ -1468,7 +1463,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd class="reqs">
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#linebreak">Line breaking &amp; hyphenation</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#linebreak">XX_ORTHLANG</a></li>
 
 <li><a target="_blank" href="https://www.w3.org/International/articles/typography/linebreak">Approaches to line-breaking</a></li>
 </ul>
@@ -1477,11 +1472,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd class="gh_discussions">
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aline_breaking+">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aline_breaking+">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aline_breaking">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aline_breaking">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Aline_breaking">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aline_breaking">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1537,7 +1532,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#justification">Text alignment &amp; justification</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#justification">XX_ORTHLANG</a></li>
 
 <li><a target="_blank" href="https://www.w3.org/International/articles/typography/justification">Approaches to full justification</a></li>
 </ul>
@@ -1546,11 +1541,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Ajustification">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Ajustification">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Ajustification">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Ajustification">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Ajustification">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Ajustification">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1603,18 +1598,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#spacing">Text spacing</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#spacing">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aspacing">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aspacing">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aspacing">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aspacing">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Aspacing">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aspacing">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1669,18 +1664,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#baselines">Baselines, line height, etc.</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#baselines">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Abaselines">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Abaselines">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Abaselines">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Abaselines">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Abaselines">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Abaselines">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1735,7 +1730,8 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite> XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#lists">Counters, lists, etc.</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#lists">XX_ORTHLANG</a></li>
+
 <li><cite> Ready-made Counter Styles</cite>: <a target="_blank" href="https://www.w3.org/TR/predefined-counter-styles/#XX_RMCFRAGNAME-styles">XX_CSNAME</a></li>
 </ul>
 </dd>
@@ -1743,11 +1739,11 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Alists">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Alists">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Alists">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Alists">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Alists">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Alists">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1808,18 +1804,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#initials">Styling initials</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#initials">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Ainitials">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Ainitials">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Ainitials">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Ainitials">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Ainitials">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Ainitials">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1881,7 +1877,7 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <section id="h_generallayout">
 <h3>General page layout &amp; progression</h3>
 
-<aside class="prompts">How are the main text area and ancilliary areas positioned and defined? Are there any special requirements here, such as dimensions in characters for the Japanese kihon hanmen? The book cover for scripts that are read right-to-left scripts is on the right of the spine, rather than the left. When content can flow vertically and to the left or right, how to specify the location of objects, text, etc. relative to the flow? Do tables and grid layouts work as expected? How do coluLANGTAGs work in vertical text? Can you mix block of vertical and horizontal text? Does text scroll in a different direction?</aside>
+<aside class="prompts">How are the main text area and ancilliary areas positioned and defined? Are there any special requirements here, such as dimensions in characters for the Japanese kihon hanmen? The book cover for scripts that are read right-to-left scripts is on the right of the spine, rather than the left. When content can flow vertically and to the left or right, how to specify the location of objects, text, etc. relative to the flow?  How do columns work in vertical text? Can you mix block of vertical and horizontal text? Does text scroll in a different direction?</aside>
 
 
 
@@ -1889,15 +1885,15 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#generallayout">General page layout &amp; progression</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#generallayout">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Apage_layout">Open requests for information</a></li>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Apage_layout">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Apage_layout">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Apage_layout">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Apage_layout">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Apage_layout">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -1955,15 +1951,15 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#grids">Grids &amp; tables</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#grids">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Agrids_tables">Open requests for information</a></li>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Agrids_tables">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Agrids_tables">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Agrids_tables">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Agrids_tables">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Agrids_tables">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -2021,15 +2017,15 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#footnotes">Notes, footnotes, etc</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#footnotes">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Afootnotes_etc">Open requests for information</a></li>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Afootnotes_etc">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Afootnotes_etc">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Afootnotes_etc">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Afootnotes_etc">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Afootnotes_etc">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -2090,15 +2086,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#headers_footers">Notes, footnotes, etc</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#headers_footers">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Aheaders_footers">Open requests for information</a></li>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Aheaders_footers">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li><li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3AXX_SPECISSUELABEL+label%3Ai%3Aheaders_footers">XX_SPECTYPEISSUE issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Aheaders_footers">Open requests for information</a></li>
+
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Aheaders_footers">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Aheaders_footers">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
@@ -2156,18 +2155,18 @@ In the Traditional Mongolian alphabet  vowels are written using 8 vowel letters,
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>XX_ORTHOG Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#interaction">Forms &amp; user interaction</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/XX_ORTH_DIR/PATH#interaction">XX_ORTHLANG</a></li>
 </ul>
 </dd>
 
 <dt>GitHub discussions</dt>
 <dd>
 <ul>
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Aquestion+is%3Aopen+label%3Ai%3Ainteraction">Open requests for information</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Aquestion+is%3Aopen+label%3Ai%3Ainteraction">Open requests for information</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3Al%3AXX_LLABEL+label%3Ai%3Ainteraction">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/XX_REPONAME/issues?q=is%3Aissue+label%3As%3AXX_SCRIPTTAG+label%3Ai%3Ainteraction">All XX_LANGNAME issues on this topic in the XX_REPONAME repo</a></li>
 
-<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=is%3Aissue+label%3Al%3AXX_SPECISSUELABEL+label%3Ai%3Ainteraction">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
+<li><a class="variable empty" target="_blank" href="https://github.com/w3c/i18n-activity/issues?q=+label%3Ascript-XX_SCRIPTTAG+label%3Ai%3Ainteraction">XX_SCRIPTNAME issues on this topic in W3C specs</a></li>
 </ul>
 </dd>
 
