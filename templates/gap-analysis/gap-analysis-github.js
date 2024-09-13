@@ -55,7 +55,7 @@ function buildDoc (repo, doc) {
 // incorporate the information in the database into the html document
 
 
-	if (sections.vertical_text) buildSection(sections.vertical_text,'vertical_text', doc, repo)
+	if (sections.writing_mode) buildSection(sections.writing_mode,'writing_mode', doc, repo)
 	if (sections.bidi_text) buildSection(sections.bidi_text,'bidi_text', doc, repo)
 
 	if (sections.fonts) buildSection(sections.fonts,'fonts', doc, repo)
@@ -294,7 +294,7 @@ window.summary = {}
 
 function setUpSummary () {
 
-	summary.vertical_text = document.getElementById('vertical_text').className
+	summary.writing_mode = document.getElementById('writing_mode').className
 	summary.bidi_text = document.getElementById('bidi_text').className
 
 	summary.encoding = document.getElementById('encoding').className
@@ -373,7 +373,7 @@ function printSummary (tentative) {
 		out += '{lang: "'+respecConfig.langs[i]+'"'
 		out += ', url:"'+respecConfig.gapDocPath+'"'
 		out += ', tentative:' + tentative
-		out += `, vertical_text:"${ getDataLine(document.getElementById('vertical_text'), respecConfig.langTags[i]) }"`
+		out += `, writing_mode:"${ getDataLine(document.getElementById('writing_mode'), respecConfig.langTags[i]) }"`
 		out += `, bidi_text:"${ getDataLine(document.getElementById('bidi_text'), respecConfig.langTags[i]) }"`
 
 		out += `, fonts:"${ getDataLine(document.getElementById('fonts'), respecConfig.langTags[i]) }"`
